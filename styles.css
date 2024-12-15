@@ -1,0 +1,115 @@
+body {
+  margin: 0px 0px 0px 0px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 5px 5px;
+  padding-bottom: 0px;
+  background-color: rgb(50, 175, 215);
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#mainHeader {
+  text-align: center;
+  color: white;
+}
+
+.pageTab {
+  background-color: rgb(50, 175, 215);
+  font-size: 16px;
+  margin: 0;
+  width: 20vw;
+  min-width: 100px;
+  flex: 1;
+  border-style: solid;
+  border-color: rgb(158, 158, 158);
+  border-bottom: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.pageTab:hover {
+  background-color: rgb(41, 139, 172);
+  border-color: white;
+}
+
+#navMenu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#current {
+  background-color: white;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 0px;
+  color: black;
+  transition-duration: 0.4s;
+}
+
+#current:hover {
+  background-color: rgb(158, 158, 158);
+  border-color: black;
+}
+
+#homeBody {
+  background-color: rgb(158, 158, 158);
+  padding: 20px;
+  margin: 5vh 2vw;
+  border-radius: 15px;
+}
+
+#mainFooter {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 5px;
+  width: 100vw;
+  background-color:  rgb(50, 175, 215);
+  color: white;
+}
+
+#contact {
+  width: 50vw;
+  min-width: 200px;
+}
+
+#socials {
+  width: 50vw;
+  min-width: 200px;
+  margin: 16px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 100px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  outline: white solid 1px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: None;
+  color: white;
+  margin-right: 5px;;
+}
+
+.fa-github {
+  background: None;
+  color: white;
+}
