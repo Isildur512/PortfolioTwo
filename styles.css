@@ -5,7 +5,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  padding: 5px 5px;
+  padding-top: 5px;
   padding-bottom: 0px;
   background-color: rgb(50, 175, 215);
 }
@@ -17,6 +17,7 @@ h1 {
 #mainHeader {
   text-align: center;
   color: white;
+  font-size: 50px;
 }
 
 .pageTab {
@@ -27,12 +28,31 @@ h1 {
   min-width: 100px;
   flex: 1;
   border-style: solid;
-  border-color: rgb(158, 158, 158);
+  border-color: white;
   border-bottom: 0;
+  border-left: 0;
   padding-bottom: 5px;
   padding-top: 5px;
   color: white;
   transition-duration: 0.4s;
+}
+
+#first {
+  border-left: 2px solid white;
+}
+
+#firstCur {
+  border-left: 2px solid white;
+  background-color: white;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 0px;
+  color: black;
+  transition-duration: 0.4s;
+}
+
+#firstCur:hover {
+  background-color: rgb(158, 158, 158);
 }
 
 .pageTab:hover {
@@ -57,7 +77,6 @@ h1 {
 
 #current:hover {
   background-color: rgb(158, 158, 158);
-  border-color: black;
 }
 
 #homeBody {
