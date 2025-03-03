@@ -110,12 +110,13 @@ h1 {
 }
 
 .fa {
-  padding: 20px;
+  padding: 10px;
+  padding-top: 20px;
   font-size: 100px;
   width: 50px;
   text-align: center;
   text-decoration: none;
-  outline: white solid 1px;
+  outline: 1px solid red;
 }
 
 .fa:hover {
@@ -125,7 +126,7 @@ h1 {
 .fa-linkedin {
   background: None;
   color: white;
-  margin-right: 5px;;
+  margin-right: 5px;
 }
 
 .fa-github {
