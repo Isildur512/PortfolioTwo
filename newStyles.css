@@ -3,39 +3,60 @@ body {
 }
 
 h1 {
-    margin-top: 40px;
-    margin-left: 40px;
     margin-bottom: 0;
-    max-width: 888px;
     color: rgb(91, 79, 255);
-    font-size: 150px;
+    font-size: 7vw;
+}
+
+li {
+    margin-bottom: 20px;
 }
 
 #header-container {
     display: grid;
-    grid-template-columns: repeat(2, fr);
-    grid-template-rows: repeat(2,fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 49vh 49vh;
+    column-gap: 40px;
+    row-gap: 0px;
     grid-template-areas: 
         "header navbar"
         "blank summary";
 }
 
 #navbar {
+    grid-area: navbar;
+    align-content: center;
+    margin-top: 30px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     list-style-type: none;
     font-size: 25px;
-    margin: 0;
-    margin-top: 40px;
+    margin-left: 80%;
     padding: 0;
+}
+
+#title-container {
+    grid-area: title;
+    align-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 0px;
+    margin-left: 40px;
 }
 
 #tagline-container {
     display: flex;
     justify-content: space-around;
-    max-width: 888px;
-    min-width: 615px;
-    margin-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 5%;
+    width: 90%;
+    margin-left: 0px;
+}
+
+#titlePt1 {
+    line-height: 0px;
 }
 
 .tagline {
@@ -44,9 +65,11 @@ h1 {
 }
 
 .home-body {
-    position: absolute;
-    right: 80px;
-    top: 60%;
+    grid-area: summary;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     color: rgb(255,255,255);
     font-size: 20px;
     min-width: 615px;
@@ -61,3 +84,27 @@ h1 {
 .navBarItem:hover {
     color: rgb(91, 79, 255);
 }
+
+.fa {
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 100px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    color: rgb(91, 79, 255);
+  }
+  
+  .fa-linkedin {
+    background: None;
+    color: white;
+    margin-right: 5px;
+  }
+  
+  .fa-github {
+    background: None;
+    color: white;
+  }
