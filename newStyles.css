@@ -5,7 +5,7 @@ body {
 h1 {
     margin-bottom: 0;
     color: rgb(91, 79, 255);
-    font-size: 7vw;
+    font-size: 120px;
 }
 
 li {
@@ -20,20 +20,21 @@ li {
     row-gap: 0px;
     grid-template-areas: 
         "header navbar"
-        "blank summary";
+        "contacts summary";
 }
 
 #navbar {
     grid-area: navbar;
     align-content: center;
+    justify-self: end;
     margin-top: 30px;
+    margin-right: 40px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
     list-style-type: none;
     font-size: 25px;
-    margin-left: 80%;
     padding: 0;
 }
 
@@ -51,7 +52,8 @@ li {
 #tagline-container {
     display: flex;
     justify-content: space-around;
-    width: 90%;
+    max-width: 710px;
+    min-width: 200px;
     margin-left: 0px;
 }
 
@@ -64,12 +66,28 @@ li {
     font-size: 25px;
 }
 
-.home-body {
+#home-body {
     grid-area: summary;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    color: rgb(255,255,255);
+    font-size: 20px;
+    min-width: 615px;
+    max-width: 888px;
+}
+
+#contact-body {
+    grid-area: contacts;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /*align-content: center;*/
+    margin-top: 25%;
+    margin-left: 40px;
+    /*justify-self: center;*/
     color: rgb(255,255,255);
     font-size: 20px;
     min-width: 615px;
@@ -107,4 +125,9 @@ li {
   .fa-github {
     background: None;
     color: white;
+  }
+
+  .pdf {
+    width: 100%;
+    aspect-ratio: 4 / 3;
   }
