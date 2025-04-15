@@ -8,6 +8,14 @@ h1 {
     font-size: 120px;
 }
 
+@media screen and (max-width: 992px) {
+    h1 {
+        margin-bottom: 0;
+        color: rgb(91, 79, 255);
+        font-size: 80px;
+    }
+}
+
 li {
     margin-bottom: 20px;
 }
@@ -15,12 +23,28 @@ li {
 #header-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));*/
     grid-template-rows: 49vh 49vh;
     column-gap: 40px;
     row-gap: 0px;
     grid-template-areas: 
         "header navbar"
         "contacts summary";
+}
+
+@media screen and (max-width: 992px) {
+    #header-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 0px;
+        grid-template-areas: 
+            "header"
+            "navbar"
+            "contacts"
+            "summary";
+    }
 }
 
 #navbar {
@@ -38,6 +62,23 @@ li {
     padding: 0;
 }
 
+@media screen and (max-width: 992px) {
+    #navbar {
+        grid-area: navbar;
+        align-content: center;
+        justify-self: center;
+        margin-top: 30px;
+        margin-right: 40px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        list-style-type: none;
+        font-size: 25px;
+        padding: 0;
+    }
+}
+
 #title-container {
     grid-area: title;
     align-content: center;
@@ -49,12 +90,36 @@ li {
     margin-left: 40px;
 }
 
+@media screen and (max-width: 992px) {
+    #title-container {
+        grid-area: title;
+        align-content: center;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
 #tagline-container {
     display: flex;
     justify-content: space-around;
     max-width: 710px;
     min-width: 200px;
     margin-left: 0px;
+}
+
+@media screen and (max-width: 992px) {
+    #tagline-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 500px;
+        min-width: 200px;
+        margin-left: 0px;
+    }
 }
 
 #titlePt1 {
@@ -78,6 +143,22 @@ li {
     max-width: 888px;
 }
 
+@media screen and (max-width: 992px) {
+    #home-body {
+        grid-area: summary;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        color: rgb(255,255,255);
+        font-size: 20px;
+        min-width: 400px;
+        max-width: 888px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 #contact-body {
     grid-area: contacts;
     grid-column-start: 1;
@@ -92,6 +173,24 @@ li {
     font-size: 20px;
     min-width: 615px;
     max-width: 888px;
+}
+
+@media screen and (max-width: 992px) {
+    #contact-body {
+        grid-area: contacts;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        align-content: center;
+        justify-self: center;
+        color: rgb(255,255,255);
+        font-size: 20px;
+        min-width: 615px;
+        max-width: 888px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
 }
 
 .navBarItem {
